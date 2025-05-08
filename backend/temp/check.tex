@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% 设置中文字体
+\setCJKmainfont{SimSun}[AutoFakeBold=true]
+\setCJKsansfont{SimHei}
+\setCJKmonofont{SimFang}
+
+% 设置超链接样式
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=cyan,
+    pdftitle={SmartCV - 智能简历生成系统},
+    pdfauthor={SmartCV}
+}
+
+\begin{document}
+\title{SmartCV - 智能简历生成系统}
+\author{生成建立后保存pdf在右上角}
+\date{\today}
+
+\maketitle
+
+\section{项目简介}
+SmartCV 是一个基于 Go+Vue 开发的智能简历免费小应用，它能够帮助用户快速生成匹配招聘需求的 LaTeX 格式简历。系统使用 OpenAI 的 国内镜像closeAI（奇怪的起名方式）来生成和修改简历内容。\newline
+建议访问我的git本地部署：\href{https://github.com/ccIisIaIcat}{我的GitHub主页}\newline
+由于不收费，所以需要自己提供api key \href{https://referer.shadowai.xyz/r/1026582}{CloseAI:https://referer.shadowai.xyz/r/1026582}该链接可提供优惠额度, \newline
+
+\section{主要功能}
+\begin{itemize}
+    \item 智能简历生成：根据用户输入的个人介绍和岗位需求自动生成专业简历
+    \item 实时预览：支持 PDF 实时预览功能
+    \item 内容优化：根据你想撒多大的谎来设置（诚实、适中、积极、创意、专家）
+    \item 灵活编辑：支持中文 LaTeX 源码直接编辑和实时编译
+\end{itemize}
+
+\section{使用说明}
+\subsection{准备工作}
+在使用本系统之前，您需要：
+\begin{enumerate}
+    \item 准备 OpenAI国内镜像 API Key（可以通过 \href{https://referer.shadowai.xyz/r/1026582}{CloseAI} 获取优惠额度的 API Key）
+    \item 准备个人基本信息和工作经历
+    \item 确定目标职位的要求
+\end{enumerate}
+
+\subsection{使用步骤}
+\begin{enumerate}
+    \item 输入 API Key：在系统顶部输入框中填入您的 OpenAI国内镜像（CloseAI） API Key
+    \item 选择优化级别：根据需求选择简历内容的优化程度
+    \item 填写个人介绍：在文本框中输入您的个人经历和技能特长
+    \item 填写职位要求：输入目标职位的具体要求
+    \item 生成简历：点击"生成简历"按钮，系统将自动生成 LaTeX 格式的简历
+    \item latex直接修改：
+    \begin{itemize}
+        \item 在右侧预览区查看生成的 PDF 效果
+        \item 如需修改，可以直接编辑 LaTeX 代码或在修改建议框中描述需要调整的内容
+        \item 点击编译进行在线编译
+    \end{itemize}
+    \item 自然语言修改：
+    \begin{itemize}
+        \item 在右侧预览区查看生成的 PDF 效果
+        \item 如需修改，可以用大白话描述需要调整的内容（文本格式都可以）
+        \item 点击"更新简历"进行内容优化
+    \end{itemize}
+\end{enumerate}
+
+\section{注意事项}
+\begin{itemize}
+    \item API Key 安全：请妥善保管您的 API Key，不要泄露给他人，本网站不会进行任何记录
+    \item 内容真实：记得过高等级的优化级别可能伴随更多谎言
+    \item 定期更新：建议定期更新简历内容，保持信息的时效性
+    \item 格式调整：如果对生成的格式不满意，可以直接修改 LaTeX 源码
+\end{itemize}
+
+\section{技术支持}
+如果在使用过程中遇到问题，可以：
+\begin{itemize}
+    \item 查看系统提供的错误提示信息
+    \item 检查 API Key 是否正确
+    \item 确认网络连接是否正常
+    \item 尝试刷新页面重新操作
+\end{itemize}
+
+\end{document}
